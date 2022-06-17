@@ -11,14 +11,22 @@
    * [📙 英语词汇](./i18nGlossary.md) - i18n相关的一些重要英文词汇
    * [🗞️ 相关新闻](./news.md) - i18n相关的一些重要新闻
 
-#重要标准
+## 重要标准
+ * W3C的相关标准
+   * 
+ 
+## 开发工具
+ * [ICU](https://github.com/unicode-org/icu) - 全球化支持权威的组件库，目前提供c语言和java版本
+   * icu4x
+ * [CLDR](https://cldr.unicode.org/index) - ICU使用的核心数据集，也是i18n的核心数据集
+   * 加工工具
 
-#开发工具
+## 出海白皮书
 
-#出海白皮书
+## 出海创业企业
 
-#出海创业企业
+## 书籍
 
-#书籍
-
-#网站外链
+## 网站外链
+ * [W3C international](https://www.w3.org/blog/international/) - W3C international网站，涵盖w3c在international方向的标准、手册、工具等。
+ * [ICU 官网](https://icu.unicode.org/) - 为应用提供Unicode和全球化支持的一套成熟、广泛使用的组件库
