@@ -31,11 +31,17 @@
      * 加工工具
 
 ## 出海白皮书
+* [2020中国互联网企业出海白皮书](http://www.d-long.com/eWebEditor/uploadfile/2020062023345840113526.pdf)
+
 
 ## 出海创业企业
+* 字节
+* 华为
+* 阿里
 
 ## 书籍
 
 ## 网站外链
  * [W3C international](https://www.w3.org/blog/international/) - W3C international网站，涵盖w3c在international方向的标准、手册、工具等。
  * [ICU 官网](https://icu.unicode.org/) - 为应用提供Unicode和全球化支持的一套成熟、广泛使用的组件库
+ * [字节国际化翻译平台](https://www.volcengine.com/products/starling)
