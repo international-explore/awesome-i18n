@@ -18,6 +18,7 @@
 * LQA:Localization QA,本地化相关的测试工作
 * RTL:Right to Left,右到左，有的地区人们习惯是从右到左阅读和书写
 * vendor:供应商的意思
+* LSP:语言服务提供商，比如[RWS](https://www.rws.com/cn/localization/)、[translations.com](https://zh_cn.translations.com/)、[lionbridge](https://www.lionbridge.com/zh-hans/)、[welocalize](https://www.welocalize.com/zh-hans/)
 
 
 ## I18N中常用词汇
