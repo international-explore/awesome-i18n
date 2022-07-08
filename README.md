@@ -46,6 +46,9 @@
 
 ## 书籍
 
+* 视频课程：
+* * 谷歌同学的一个教程： https://www.udacity.com/course/localization-essentials--ud610 
+
 ## 网站外链
  * [W3C international](https://www.w3.org/blog/international/) - W3C international网站，涵盖w3c在international方向的标准、手册、工具等。
  * [ICU 官网](https://icu.unicode.org/) - 为应用提供Unicode和全球化支持的一套成熟、广泛使用的组件库
