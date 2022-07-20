@@ -20,7 +20,7 @@
    * W3C标准
    * Unicode标准
  * l10n
-   * 成熟度标准
+   * [成熟度标准](https://blog.andovar.com/localization-maturity-model-how-does-your-company-measure-up)
    * 
  
 ## 开发工具
