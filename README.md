@@ -8,6 +8,7 @@
 # 内容目录
    * [重要标准](#重要标准) - 国际化方面的一些重要标准、规范。
    * [开发工具](#开发工具) - 国际化重要的组件、工具、应用。
+   * [核心问题域](#核心问题域)-国际化通用的问题域
    * [出海白皮书](#出海白皮书) - 一些出海的企业，白皮书等权威信息
    * [出海创业企业](#出海创业企业) - 服务企业出海的一些创业企业。
    * [书籍](#书籍) - 国际化相关的一些重要书籍
@@ -17,8 +18,7 @@
 
 ## 重要标准
  * i18n
-   * W3C标准
-   * Unicode标准
+   * [行业标准](/technology/industry_standard.md)
  * l10n
    * [成熟度标准](https://blog.andovar.com/localization-maturity-model-how-does-your-company-measure-up)
    * 
@@ -29,7 +29,12 @@
      * [icu4x](https://github.com/unicode-org/icu4x) - CU4X提供了支持广泛软件国际化的组件。它深刻借鉴了ICU4C、ICU4J和ECMA-402的经验，并依赖于CLDR项目的数据。
    * [CLDR](https://cldr.unicode.org/index) - ICU使用的核心数据集，也是i18n的核心数据集
      * 加工工具
-
+## 核心问题域
+ * 标准问题域
+   * [locale](technology/problem_domain/standard/locale.md)
+   * [时间](technology/problem_domain/standard/datetime.md)
+   * [数字](technology/problem_domain/standard/number.md)
+   * [度量衡](technology/problem_domain/standard/unit.md)
 ## 出海白皮书
 * [2020中国互联网企业出海白皮书](http://www.d-long.com/eWebEditor/uploadfile/2020062023345840113526.pdf)
 
