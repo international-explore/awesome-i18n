@@ -88,7 +88,8 @@
 
 ## 微信公众号
 * 36氪出海 - 提供出海企业相关的新闻
-
+* RWS语言翻译和内容管理 - RWS(语言服务提供商)中国的官方微信
+  
 ## 网站外链
  * [W3C international](https://www.w3.org/blog/international/) - W3C international网站，涵盖w3c在international方向的标准、手册、工具等。
  * [ICU 官网](https://icu.unicode.org/) - 为应用提供Unicode和全球化支持的一套成熟、广泛使用的组件库
