@@ -1,26 +1,61 @@
-# 国际化技术交流
+# 国际化出海技术交流
 
 旨在收集和分享出海i18n相关的一些领域知识和技术工具。
 内容上包括重要标准、开发工具、经典文章、相关书籍、白皮书、出海创业企业、英文词汇和重要新闻等。
-范围上会涵盖i18n - internationalization、t9n - translation、l10n - localization、g11n - globalization、m17n - multilingualization等
+范围整体分为两大部分
+- i18n - internationalization：主要包括货币、时间、度量衡等本地化因素的适配技术
+- l10n - localization：主要包括翻译、多语言等本地化文案适配技术
 
 
 # 内容目录
-   * [i18n](#i18n-internationalization) - internationalization相关内容，涵盖货币、时间、度量衡等i18n因素
-   * [l10n](#l10n-localization) - localization相关内容，涵盖
-   * [t9n](#t9n-translation) - localization相关内容，涵盖
-   * [g11n](#t9n-translation) - localization相关内容，涵盖
-   * [m17n](#t9n-translation) - localization相关内容，涵盖
+* [i18n-internationalization](#i18n-internationalization) 
+    * [LOCALE - LOCALE、CLDR等通用部分](#通用部分)
+    * [CURRENCY - 货币相关问题](#货币部分-currency)
+    * [TIME - 时间相关问题](#时间部分-time)
+      * [TIMEZONE - 时区相关问题]()
+      * [HOLIDAY - 节假日相关问题]()
+    * [MEASURE - 度量衡相关问题]()
+    * [NUMBER - 数字相关问题]()
+    * [PHONE - 电话相关问题]()
+    * [MESSAGE - 信息相关问题，涵盖标题、标签、错误信息等]()
+    * [COLLATE - 比较习惯相关问题]()
+    * [NAME - 姓名相关问题]()
+    * [ADDRESS - 地址相关问题]()
+    * [PAPER - 纸张相关问题]()
+* [l10n-localization](#l10n-localization)
+  
   
 ## i18n-internationalization 
+#### 通用标准
+#### 权威组织
+#### 开发工具
+#### 相关站点
+#### 经典文章
+
+### 货币部分-currency
+#### 货币标准
+#### 货币权威组织
+#### 货币开发工具
+#### 货币相关站点
+#### 货币经典文章
+
+### 时间部分-time
+#### 时间标准
+#### 时间权威组织
+#### 时间开发工具
+#### 时间相关站点
+#### 时间经典文章
  
+### 度量衡部分-time
+#### 时间标准
+#### 时间权威组织
+#### 时间开发工具
+#### 时间相关站点
+#### 时间经典文章
+
+
 ## l10n-localization 
 
-## t9n-translation
-
-## g11n-globalization
-
-## m17n-multilingualization
 
  * i18n
    * [行业标准](/technology/industry_standard.md)
