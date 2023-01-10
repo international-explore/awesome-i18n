@@ -22,8 +22,13 @@
     * [NAME - 姓名相关问题]()
     * [ADDRESS - 地址相关问题]()
     * [PAPER - 纸张相关问题]()
+    * [POSTCODE - 邮编相关问题]()
 * [l10n-localization](#l10n-localization)
-  
+    * [IDIOM - 习惯语相关问题]()
+    * [TABOO - 禁忌语相关问题]()
+    * [BRAND - 品牌相关问题]()
+    * [EVENT - 各地重大事件相关]()
+    * [WEATHER - 天气重大事件相关]()
   
 ## i18n-internationalization 
 #### 通用标准
