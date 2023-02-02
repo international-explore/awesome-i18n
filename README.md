@@ -28,7 +28,7 @@
     * [WEATHER - 天气重大事件相关]()
 * [l10n-localization](#l10n-localization)
     * [文案相关问题](#文案相关问题)
-* [出海企业和新闻](#出海企业和新闻)
+* [出海企业新闻和文章](#出海企业新闻和文章)
   
 ## i18n-internationalization 
 #### 通用标准
@@ -42,6 +42,7 @@
 [icu4x](https://github.com/unicode-org/icu4x) - CU4X提供了支持广泛软件国际化的组件。它深刻借鉴了ICU4C、ICU4J和ECMA-402的经验，并依赖于CLDR项目的数据。
 #### 相关站点
 #### 经典文章
+
 
 ### 货币部分-currency
 
@@ -118,6 +119,8 @@ CLDR数据集：
 参考：[度量衡](technology/problem_domain/standard/unit.md)
 
 ## l10n-localization 
+[l10n成熟度标准](https://blog.andovar.com/localization-maturity-model-how-does-your-company-measure-up)
+
 #### 文案相关问题
 
 ## 出海企业新闻和文章
@@ -144,43 +147,17 @@ CLDR数据集：
 [京东国际收缩，海外业务退守供应链服务](https://mp.weixin.qq.com/s/_WyrMr25orea8AjDzVSmRw)
 
 
- * i18n
-   * [行业标准](/technology/industry_standard.md)
- * l10n
-   * [成熟度标准](https://blog.andovar.com/localization-maturity-model-how-does-your-company-measure-up)
-   *  
-## 核心问题域
- * 标准本地化（有很强的规律，或其本身就遵循某个国际标准）
-   * [locale](technology/problem_domain/standard/locale.md)
-   * [时间](technology/problem_domain/standard/datetime.md)
-   * [数字](technology/problem_domain/standard/number.md)
-   * [度量衡](technology/problem_domain/standard/unit.md)
-   * [电话]
- * 非标本地化（是突发或实时变化的，用标准化技术无法生成或业界尚未有权威的数据源，它们的本地化过程就依赖于人工创作或公司外系统）
-   * [节假日]
-   * [天气]
-   * [事故]
-
-   
-## 开发工具
- * i18n
-   * [ICU](https://github.com/unicode-org/icu) - 全球化支持权威的组件库，目前提供c语言和java版本
-     * [icu4x](https://github.com/unicode-org/icu4x) - CU4X提供了支持广泛软件国际化的组件。它深刻借鉴了ICU4C、ICU4J和ECMA-402的经验，并依赖于CLDR项目的数据。
-   * [CLDR](https://cldr.unicode.org/index) - ICU使用的核心数据集，也是i18n的核心数据集
-     * 加工工具
-
 ## 出海白皮书
 * [2020中国互联网企业出海白皮书](http://www.d-long.com/eWebEditor/uploadfile/202006202334
 
 ## 书籍
-
 * 视频课程：
 * * 谷歌同学的一个教程： https://www.udacity.com/course/localization-essentials--ud610 
 
 ## 微信公众号
 * 36氪出海 - 提供出海企业相关的新闻
 * RWS语言翻译和内容管理 - RWS(语言服务提供商)中国的官方微信
-  
+
 ## 网站外链
  * [W3C international](https://www.w3.org/blog/international/) - W3C international网站，涵盖w3c在international方向的标准、手册、工具等。
  * [ICU 官网](https://icu.unicode.org/) - 为应用提供Unicode和全球化支持的一套成熟、广泛使用的组件库
