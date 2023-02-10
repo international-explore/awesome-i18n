@@ -39,11 +39,9 @@
 
 #### 权威组织
 #### 开发工具
-[icu](https://unicode-org.github.io/icu/)ICU：international components for unicode，国际化unicode组件。ICU是一个开源的C/C++、java类库，它给程序提供unicode和全球化支持。它是跨平台的，在所有平台都可以给出相同的结果。ICU是**library**
-
-[cldr](https://github.com/unicode-org/cldr) The Unicode Common Locale Data Repository,Unicode通用语言环境数据存储库。CLDR是**数据集**
-
-[icu4x](https://github.com/unicode-org/icu4x) - CU4X提供了支持广泛软件国际化的组件。它深刻借鉴了ICU4C、ICU4J和ECMA-402的经验，并依赖于CLDR项目的数据。
+- [icu](https://unicode-org.github.io/icu/)ICU：international components for unicode，国际化unicode组件。ICU是一个开源的C/C++、java类库，它给程序提供unicode和全球化支持。它是跨平台的，在所有平台都可以给出相同的结果。ICU是**library**
+- [cldr](https://github.com/unicode-org/cldr) The Unicode Common Locale Data Repository,Unicode通用语言环境数据存储库。CLDR是**数据集**
+- [icu4x](https://github.com/unicode-org/icu4x) - CU4X提供了支持广泛软件国际化的组件。它深刻借鉴了ICU4C、ICU4J和ECMA-402的经验，并依赖于CLDR项目的数据。
 #### 相关站点
 #### 经典文章
 
@@ -51,14 +49,14 @@
 ### 货币部分-currency
 
 #### 货币标准
-[iso 4217 表示货币或资金名称](https://www.iso.org/iso-4217-currency-codes.html)
+- [iso 4217 表示货币或资金名称](https://www.iso.org/iso-4217-currency-codes.html)
 
 #### 国家使用的币种
 
 #### 货币展示样式
 CLDR数据集：
-[货币displayname和symbol示例](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-numbers-modern/main/zh/currencies.json)
-[货币展示样式示例](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-numbers-modern/main/zh/numbers.json#L143)
+- [货币displayname和symbol示例](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-numbers-modern/main/zh/currencies.json)
+- [货币展示样式示例](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-numbers-modern/main/zh/numbers.json#L143)
 
 #### 货币精度
 
@@ -78,40 +76,38 @@ CLDR数据集：
 
 ### 时间部分-time
 #### 时间展示样式
-[时间字段](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-dates-modern/main/zh/dateFields.json) 包括纪元、年、季度、月、周、日、时分秒等
-[展示样式](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-dates-modern/main/zh/ca-gregorian.json)包括日期格式化、时间格式化、时间段格式化
+- [时间字段](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-dates-modern/main/zh/dateFields.json) 包括纪元、年、季度、月、周、日、时分秒等
+- [展示样式](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-dates-modern/main/zh/ca-gregorian.json)包括日期格式化、时间格式化、时间段格式化
 
 
 #### 日历相关
 各种历法
-[维基百科历法说明](https://zh.wikipedia.org/zh-hans/%E5%8E%86%E6%B3%95)
-[国际通用公历](https://zh.wikipedia.org/wiki/%E5%85%AC%E5%8E%86)
-[CLDR中的历法数据](https://github.com/unicode-org/cldr-json/tree/main/cldr-json) cldr-cal开头的文件
+- [维基百科历法说明](https://zh.wikipedia.org/zh-hans/%E5%8E%86%E6%B3%95)
+- [国际通用公历](https://zh.wikipedia.org/wiki/%E5%85%AC%E5%8E%86)
+- [CLDR中的历法数据](https://github.com/unicode-org/cldr-json/tree/main/cldr-json) cldr-cal开头的文件
 
 节假日
 - 节假日查询工具网站：https://www.timeanddate.com/holidays/
 
 #### 时区
-[IANA时区数据库](https://www.iana.org/time-zones)
-
-时区查看工具，基于IANA发布的TZDB数据制作：https://nodatime.org/TimeZones
+- [IANA时区数据库](https://www.iana.org/time-zones)
+- 时区查看工具，基于IANA发布的TZDB数据制作：https://nodatime.org/TimeZones
 #### 时间标准
-[ISO 8601](https://zh.wikipedia.org/zh-hans/ISO_8601) 国际标准化组织的日期和时间的表示方法
+- [ISO 8601](https://zh.wikipedia.org/zh-hans/ISO_8601) 国际标准化组织的日期和时间的表示方法
 
 #### 时间权威组织
 #### 时间开发工具
 
 #### 时间相关站点
-[时间戳转换](https://tool.chinaz.com/Tools/unixtime.aspx)
+- [时间戳转换](https://tool.chinaz.com/Tools/unixtime.aspx)
 
 #### 时间经典文章
-[欧美地区的夏令时有什么意义？](https://www.zhihu.com/question/37097917)
-[时标和历法](http://www.fmddlmyy.cn/text8.html)
+- [欧美地区的夏令时有什么意义？](https://www.zhihu.com/question/37097917)
+- [时标和历法](http://www.fmddlmyy.cn/text8.html)
 
 ### 度量衡相关
-[度量衡系统类型](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-units-modern/main/zh/measurementSystemNames.json) 公制、英制、美制
-
-[单位](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-units-modern/main/zh/units.json)
+- [度量衡系统类型](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-units-modern/main/zh/measurementSystemNames.json) 公制、英制、美制
+- [单位](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-units-modern/main/zh/units.json)
 
 常见度量衡类型：
 - 长度
@@ -120,10 +116,11 @@ CLDR数据集：
 - 重量
 - 温度
 - 坐标
+
 参考：[度量衡](technology/problem_domain/standard/unit.md)
 
 ## l10n-localization 
-[l10n成熟度标准](https://blog.andovar.com/localization-maturity-model-how-does-your-company-measure-up)
+- [l10n成熟度标准](https://blog.andovar.com/localization-maturity-model-how-does-your-company-measure-up)
 
 #### 文案相关问题
 
@@ -142,13 +139,12 @@ CLDR数据集：
 - Kwai：快手短视频国际版
   
 #### SHEIN
-希音SHEIN是一家全球领先的时尚和生活方式在线零售商。服务全球超过150个国家的消费者。
+- 希音SHEIN是一家全球领先的时尚和生活方式在线零售商。服务全球超过150个国家的消费者。
 
 ### 新闻和文章
 #### 2023年1月
-[出海，互联网大厂必修课](https://letschuhai.com/ecommerce-overseas-tiktok-temu-shein?utm_source=wechat&utm_medium=banner&utm_campaign=event&utm_id=weekly31)
-
-[京东国际收缩，海外业务退守供应链服务](https://mp.weixin.qq.com/s/_WyrMr25orea8AjDzVSmRw)
+- [出海，互联网大厂必修课](https://letschuhai.com/ecommerce-overseas-tiktok-temu-shein?utm_source=wechat&utm_medium=banner&utm_campaign=event&utm_id=weekly31)
+- [京东国际收缩，海外业务退守供应链服务](https://mp.weixin.qq.com/s/_WyrMr25orea8AjDzVSmRw)
 
 
 ## 出海白皮书
