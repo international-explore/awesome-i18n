@@ -43,13 +43,50 @@
 - [cldr](https://github.com/unicode-org/cldr) The Unicode Common Locale Data Repository,Unicode通用语言环境数据存储库。CLDR是**数据集**
 - [icu4x](https://github.com/unicode-org/icu4x) - CU4X提供了支持广泛软件国际化的组件。它深刻借鉴了ICU4C、ICU4J和ECMA-402的经验，并依赖于CLDR项目的数据。
 #### 相关站点
+W3C国际化活动小组 (Internationalization Activity)：W3C国际化活动小组提供了一系列国际化和本地化的技术规范，包括HTML、CSS、XML等，旨在为Web开发者提供标准化的国际化方案。
+
+Mozilla开发者网络 (MDN Web Docs)：Mozilla开发者网络提供了很多关于i18n的文档和教程，包括国际化和本地化的指南、多语言网站的实现等。
+
+i18n资源库 (i18n-resource-repo)：这是一个公共的i18n资源库，包括了很多翻译好的文本资源，可以帮助开发者快速构建多语言网站。
+
+Google开发者中心 (Google Developers)：Google开发者中心提供了许多有关国际化和本地化的文档和教程，包括如何构建跨文化的应用程序等。
+
+阮一峰的网络日志 (ruanyifeng.com)：阮一峰的网络日志是一位知名技术博主，他的博客中提供了许多有关i18n的文章，包括如何处理多语言字符串、如何进行本地化等。
+
+Unicode Consortium：Unicode Consortium是一个非营利性组织，它维护了Unicode标准，为数字、字母、符号和其他字符提供唯一的标识符，从而使得跨语言和跨文化的通信和交互成为可能。
+
+Internationalization and Localization Industry Standards Association (ILISA)：ILISA是一个致力于推动国际化和本地化行业标准化的非营利组织，其官方网站提供了有关国际化和本地化的文章、新闻、博客等信息。
+
+IBM Globalization (IBM Globalization)：IBM Globalization提供了各种与国际化和本地化相关的产品和服务，其官方网站还提供了许多与国际化和本地化相关的文档和教程。
+
+Java Internationalization (Java i18n)：Java Internationalization是Java语言中处理国际化和本地化的工具和库，其官方网站提供了各种与Java国际化和本地化相关的教程、文档和代码示例。
+
+Gettext (GNU gettext)：Gettext是一个开源的国际化和本地化工具，支持各种编程语言，包括C/C++、Python、Ruby等，其官方网站提供了有关Gettext的文档和教程。
 #### 经典文章
+"Unicode and Internationalization" by Mark Davis and Markus Scherer - 该文章介绍了Unicode标准及其在国际化方面的应用。链接：http://unicode.org/reports/tr26/
+
+"Internationalization Best Practices: Specifying Language in XHTML and HTML Content" by Richard Ishida - 该文章讲述了在XHTML和HTML内容中指定语言的最佳实践。链接：https://www.w3.org/International/articles/language-tags/
+
+"Character Sets and Encodings" by Mark Pilgrim - 该文章介绍了字符集和编码的概念，并介绍了在Web开发中如何正确处理它们。链接：https://diveinto.html5doctor.com/encoding.html
+
+"The importance of language tags in HTML and XML" by Geert Van Damme - 该文章讨论了在HTML和XML中使用语言标记的重要性，以及如何正确使用它们来支持国际化。链接：https://www.w3.org/International/articles/language-tags/
+
+"Internationalization: The Multi-Lingual Web" by Richard Ishida - 该文章涵盖了各种Web国际化问题的概述，包括语言标记、字符集和编码、本地化资源、文本排序和其他相关问题。链接：https://www.w3.org/International/tutorials/internationalization/
+
 
 
 ### 货币部分-currency
 
 #### 货币标准
 - [iso 4217 表示货币或资金名称](https://www.iso.org/iso-4217-currency-codes.html)
+
+ISO 4217 - 这是一份国际标准，定义了三个字母的货币代码，例如 USD 表示美元。此标准还定义了每个货币的小数点位置和格式等信息。ISO 4217的官方链接为：https://www.iso.org/iso-4217-currency-codes.html
+
+ISO 10916 - 这是一份国际标准，规定了货币金额表示法的基本原则，包括货币符号、金额表示方式、货币小数点分隔符等。ISO 10916的官方链接为：https://www.iso.org/standard/57248.html
+
+ISO 15022 - 这是一份国际标准，规定了金融电报和电子交换数据的格式和内容规则。ISO 15022定义了用于表示货币的代码和符号，以及货币金额的表示方法。ISO 15022的官方链接为：https://www.iso.org/standard/31443.html
+
+ISO 20022 - 这是一份国际标准，为金融机构提供了一种统一的数据模型和通信方式。该标准定义了一个用于交换财务信息的XML格式，其中包括用于表示货币的代码和符号，以及货币金额的表示方法。ISO 20022的官方链接为：https://www.iso20022.org/
 
 #### 国家使用的币种
 
@@ -71,8 +108,28 @@ CLDR数据集：
 
 #### 货币权威组织
 #### 货币开发工具
+money.js: 一个简单的 JavaScript 货币库，可以格式化货币金额、执行货币计算，支持各种货币，包括自定义货币。它可以在浏览器端和 Node.js 中使用。Github链接：https://github.com/openexchangerates/money.js/
+
+accounting.js: 一个用于格式化和处理货币、数字和货币的 JavaScript 库，支持多种货币格式和货币计算。它可以在浏览器端和 Node.js 中使用。Github链接：https://github.com/josscrowcroft/accounting.js/
+
+big.js: 一个用于处理大数字和货币计算的 JavaScript 库。它支持多种货币，可以在浏览器端和 Node.js 中使用。Github链接：https://github.com/MikeMcl/big.js/
+
+MoneyPHP: 一个 PHP 库，可以格式化和处理货币，支持各种货币和货币计算。Github链接：https://github.com/moneyphp/money
+
+django-money: 一个 Django 库，可以在 Django 应用程序中处理货币，支持多种货币格式和货币计算。Github链接：https://github.com/django-money/django-money
+
+Numeral.js: 一个用于格式化和处理数字的 JavaScript 库，支持各种数字格式、货币和货币计算。它可以在浏览器端和 Node.js 中使用。Github链接：https://github.com/adamwdraper/Numeral-js
+
+jpmorganchase/number: 一个 Java 库，可以格式化货币金额、执行货币计算，支持多种货币和货币格式。Github链接：https://github.com/jpmorganchase/number
+
 #### 货币相关站点
 #### 货币经典文章
+"Internationalizing Currency Display" (Unicode Consortium)：介绍了国际化中货币显示的标准和最佳实践。
+链接：https://unicode.org/reports/tr35/tr35-numbers.html#Currency_Display
+
+
+"Currency Formatting Best Practices" (Globalization Partners International)：介绍了货币格式化的最佳实践。
+链接：https://www.globalizationpartners.com/2018/09/05/currency-formatting-best-practices/
 
 ### 时间部分-time
 #### 时间展示样式
@@ -95,11 +152,37 @@ CLDR数据集：
 #### 时间标准
 - [ISO 8601](https://zh.wikipedia.org/zh-hans/ISO_8601) 国际标准化组织的日期和时间的表示方法
 
+ISO 8601：该标准规定了日期和时间的表示方法，包括年、月、日、小时、分钟和秒等信息，也可以表示带时区偏移量的日期和时间。该标准适用于各种应用场景，如数据交换、文件存储、电子邮件等等。ISO 8601标准的具体内容可以在以下链接中查看：https://www.iso.org/iso-8601-date-and-time-format.html
+
+POSIX时间：该标准定义了一个以1970年1月1日00:00:00 UTC为起点的时间系统，以秒为单位表示时间。POSIX时间主要用于Unix系统中，也是许多编程语言中表示时间的标准。该标准的具体内容可以在以下链接中查看：https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_15
+
+RFC 3339：该标准基于ISO 8601标准，规定了一种日期和时间的表示方法，同时也支持带时区偏移量的日期和时间。RFC 3339主要用于互联网协议中，如XML、JSON等格式中的时间表示。该标准的具体内容可以在以下链接中查看：https://datatracker.ietf.org/doc/html/rfc3339
+
+Unicode CLDR：该标准是针对不同地区和语言的本地化需求而制定的，定义了各种日期和时间格式的模式和规则。Unicode CLDR包含了全球各地的日期、时间、时区和节假日等信息，是很多国际化软件和网站中常用的时间标准之一。该标准的具体内容可以在以下链接中查看：https://cldr.unicode.org/index/cldr-spec/dates-times
+
+
+
 #### 时间权威组织
 #### 时间开发工具
+Moment.js - 一个JavaScript库，用于解析、验证、操作和显示日期和时间，支持本地化和国际化。Github链接：https://github.com/moment/moment
 
+date-fns - 另一个用于处理日期和时间的JavaScript库，它强调了函数式编程和不可变性，也支持本地化和国际化。Github链接：https://github.com/date-fns/date-fns
+
+ICU - 国际组件库，包括一个日期和时间格式化工具，可以格式化和解析各种日期和时间格式，并支持本地化和国际化。Github链接：https://github.com/unicode-org/icu
+
+Chrono - 一个用于解析和格式化自然语言日期和时间的JavaScript库，支持多种语言和时区。Github链接：https://github.com/wanasit/chrono
+
+pytz - Python的时区处理库，可以轻松地处理不同时区的时间转换。Github链接：https://github.com/stub42/pytz
 #### 时间相关站点
 - [时间戳转换](https://tool.chinaz.com/Tools/unixtime.aspx)
+
+timeanddate.com: 这个网站提供了丰富的时间和日期工具，包括世界时钟、日出日落时间、时区转换、会议计算器等等。链接：https://www.timeanddate.com/
+
+worldtimebuddy.com: 这个网站可以帮助你快速地查看不同城市之间的时间差，并支持定制化的时区列表和时间格式。链接：https://www.worldtimebuddy.com/
+
+thetimenow.com: 这个网站提供了全球各地的实时时钟、日出日落时间、时区地图等工具。链接：https://www.thetimenow.com/
+
+Every Time Zone: 这个网站提供了一个简单易用的界面，可以轻松查看世界各地的时间、日期和时区。链接：https://everytimezone.com/
 
 #### 时间经典文章
 - [欧美地区的夏令时有什么意义？](https://www.zhihu.com/question/37097917)
@@ -129,6 +212,13 @@ CLDR数据集：
 #### 字节
 - tiktok：海外版抖音
 - IfYooou：对标SHEIN的快时尚跨境独立站
+
+#### 腾讯
+海外市场业务主要包括游戏、社交网络、数字内容、金融科技等领域，拥有海外用户超过十亿。
+#### 华为
+在海外市场主要是手机、通信设备、云计算等领域，是全球最大的电信设备供应商之一。
+#### 小米
+在印度、东南亚等地区市场表现优异，业务主要涵盖智能手机、智能家居、智能电视等领域。
 #### 拼多多
 - Temu：海外版拼多多
 #### 阿里
