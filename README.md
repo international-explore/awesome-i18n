@@ -35,9 +35,6 @@
 * [网站外链](#网站外链)
   
 ## i18n-internationalization 
-#### 通用标准
-
-#### 权威组织
 #### 开发工具
 - [icu](https://unicode-org.github.io/icu/)ICU：international components for unicode，国际化unicode组件。ICU是一个开源的C/C++、java类库，它给程序提供unicode和全球化支持。它是跨平台的，在所有平台都可以给出相同的结果。ICU是**library**
 - [cldr](https://github.com/unicode-org/cldr) The Unicode Common Locale Data Repository,Unicode通用语言环境数据存储库。CLDR是**数据集**
@@ -74,13 +71,22 @@ Gettext (GNU gettext)：Gettext是一个开源的国际化和本地化工具，�
 "Internationalization: The Multi-Lingual Web" by Richard Ishida - 该文章涵盖了各种Web国际化问题的概述，包括语言标记、字符集和编码、本地化资源、文本排序和其他相关问题。链接：https://www.w3.org/International/tutorials/internationalization/
 
 
+### 国家/地区-country/region
+#### 相关标准
+ISO 3166 国家代码标准：该标准定义了所有国家和地区的代码，用于在国际交流、商务和政府间合作等方面的标识。ISO官网链接：https://www.iso.org/iso-3166-country-codes.html。wiki链接：https://zh.wikipedia.org/zh/ISO_3166-1
+
+ISO 3166-1 国家代码标准：该标准定义了全球所有国家和地区的代码和名称，共包括249个国家和地区。其中，国家代码由2个字母组成，地区代码由3个字母组成。例如，中国的国家代码是“CN”，美国的国家代码是“US”，而英国的地区代码是“GB-ENG”。
+
+ISO 3166-2 国家行政区划代码标准：该标准定义了各个国家的行政区划代码和名称。这些代码可以用于政府、商业和其他领域中进行国家和地区的标识和分类。例如，中国的行政区划代码包括“CN-11”（北京市）、“CN-44”（广东省）等。
+
+ISO 3166-3 国家名称变更标准：该标准定义了国家和地区名称变更时的处理方式和规则。该标准主要用于处理国家和地区名称的历史变更，以确保标准的连续性和一致性。
+
 
 ### 货币部分-currency
 
 #### 货币标准
-- [iso 4217 表示货币或资金名称](https://www.iso.org/iso-4217-currency-codes.html)
 
-ISO 4217 - 这是一份国际标准，定义了三个字母的货币代码，例如 USD 表示美元。此标准还定义了每个货币的小数点位置和格式等信息。ISO 4217的官方链接为：https://www.iso.org/iso-4217-currency-codes.html
+ISO 4217 - 这是一份国际标准，定义了三个字母的货币代码，例如 USD 表示美元。此标准还定义了每个货币的小数点位置和格式等信息。ISO 4217的官方链接为：https://www.iso.org/iso-4217-currency-codes.html。维基百科的链接：https://zh.wikipedia.org/zh-hans/ISO_4217
 
 ISO 10916 - 这是一份国际标准，规定了货币金额表示法的基本原则，包括货币符号、金额表示方式、货币小数点分隔符等。ISO 10916的官方链接为：https://www.iso.org/standard/57248.html
 
@@ -88,14 +94,12 @@ ISO 15022 - 这是一份国际标准，规定了金融电报和电子交换数�
 
 ISO 20022 - 这是一份国际标准，为金融机构提供了一种统一的数据模型和通信方式。该标准定义了一个用于交换财务信息的XML格式，其中包括用于表示货币的代码和符号，以及货币金额的表示方法。ISO 20022的官方链接为：https://www.iso20022.org/
 
-#### 国家使用的币种
 
 #### 货币展示样式
 CLDR数据集：
 - [货币displayname和symbol示例](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-numbers-modern/main/zh/currencies.json)
 - [货币展示样式示例](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-numbers-modern/main/zh/numbers.json#L143)
 
-#### 货币精度
 
 #### 汇率
 相关api站点工具
@@ -106,7 +110,6 @@ CLDR数据集：
 | [Currency API](https://currencylayer.com/documentation)   | 每日更新、usd基准 |
 | [openexchangerates](https://docs.openexchangerates.org/reference/api-introduction) | 小时更新、usd为基准 |
 
-#### 货币权威组织
 #### 货币开发工具
 money.js: 一个简单的 JavaScript 货币库，可以格式化货币金额、执行货币计算，支持各种货币，包括自定义货币。它可以在浏览器端和 Node.js 中使用。Github链接：https://github.com/openexchangerates/money.js/
 
@@ -122,7 +125,6 @@ Numeral.js: 一个用于格式化和处理数字的 JavaScript 库，支持各�
 
 jpmorganchase/number: 一个 Java 库，可以格式化货币金额、执行货币计算，支持多种货币和货币格式。Github链接：https://github.com/jpmorganchase/number
 
-#### 货币相关站点
 #### 货币经典文章
 "Internationalizing Currency Display" (Unicode Consortium)：介绍了国际化中货币显示的标准和最佳实践。
 链接：https://unicode.org/reports/tr35/tr35-numbers.html#Currency_Display
@@ -152,7 +154,7 @@ jpmorganchase/number: 一个 Java 库，可以格式化货币金额、执行货�
 #### 时间标准
 - [ISO 8601](https://zh.wikipedia.org/zh-hans/ISO_8601) 国际标准化组织的日期和时间的表示方法
 
-ISO 8601：该标准规定了日期和时间的表示方法，包括年、月、日、小时、分钟和秒等信息，也可以表示带时区偏移量的日期和时间。该标准适用于各种应用场景，如数据交换、文件存储、电子邮件等等。ISO 8601标准的具体内容可以在以下链接中查看：https://www.iso.org/iso-8601-date-and-time-format.html
+ISO 8601：该标准规定了日期和时间的表示方法，包括年、月、日、小时、分钟和秒等信息，也可以表示带时区偏移量的日期和时间。该标准适用于各种应用场景，如数据交换、文件存储、电子邮件等等。ISO 8601标准的具体内容可以在以下链接中查看：https://www.iso.org/iso-8601-date-and-time-format.html。维基百科链接：(https://zh.wikipedia.org/zh-hans/ISO_8601)
 
 POSIX时间：该标准定义了一个以1970年1月1日00:00:00 UTC为起点的时间系统，以秒为单位表示时间。POSIX时间主要用于Unix系统中，也是许多编程语言中表示时间的标准。该标准的具体内容可以在以下链接中查看：https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_15
 
@@ -161,8 +163,6 @@ RFC 3339：该标准基于ISO 8601标准，规定了一种日期和时间的表�
 Unicode CLDR：该标准是针对不同地区和语言的本地化需求而制定的，定义了各种日期和时间格式的模式和规则。Unicode CLDR包含了全球各地的日期、时间、时区和节假日等信息，是很多国际化软件和网站中常用的时间标准之一。该标准的具体内容可以在以下链接中查看：https://cldr.unicode.org/index/cldr-spec/dates-times
 
 
-
-#### 时间权威组织
 #### 时间开发工具
 Moment.js - 一个JavaScript库，用于解析、验证、操作和显示日期和时间，支持本地化和国际化。Github链接：https://github.com/moment/moment
 
@@ -187,6 +187,7 @@ Every Time Zone: 这个网站提供了一个简单易用的界面，可以轻松
 #### 时间经典文章
 - [欧美地区的夏令时有什么意义？](https://www.zhihu.com/question/37097917)
 - [时标和历法](http://www.fmddlmyy.cn/text8.html)
+- 时间是怎么来的]https://mp.weixin.qq.com/s/SlL040FjK90_TF7pd2lkGg
 
 ### 度量衡相关
 - [度量衡系统类型](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-units-modern/main/zh/measurementSystemNames.json) 公制、英制、美制
@@ -205,7 +206,6 @@ Every Time Zone: 这个网站提供了一个简单易用的界面，可以轻松
 ## l10n-localization 
 - [l10n成熟度标准](https://blog.andovar.com/localization-maturity-model-how-does-your-company-measure-up)
 
-#### 文案相关问题
 
 ## 出海企业新闻和文章
 ### 出海企业
