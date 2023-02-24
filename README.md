@@ -73,7 +73,7 @@ Gettext (GNU gettext)：Gettext是一个开源的国际化和本地化工具，�
 
 ### 国家/地区-country/region
 #### 相关标准
-ISO 3166 国家代码标准：该标准定义了所有国家和地区的代码，用于在国际交流、商务和政府间合作等方面的标识。ISO官网链接：https://www.iso.org/iso-3166-country-codes.html。wiki链接：https://zh.wikipedia.org/zh/ISO_3166-1
+ISO 3166 国家代码标准：该标准定义了所有国家和地区的代码，用于在国际交流、商务和政府间合作等方面的标识。ISO官网链接：https://www.iso.org/iso-3166-country-codes.html wiki链接：https://zh.wikipedia.org/zh/ISO_3166-1
 
 ISO 3166-1 国家代码标准：该标准定义了全球所有国家和地区的代码和名称，共包括249个国家和地区。其中，国家代码由2个字母组成，地区代码由3个字母组成。例如，中国的国家代码是“CN”，美国的国家代码是“US”，而英国的地区代码是“GB-ENG”。
 
@@ -86,7 +86,7 @@ ISO 3166-3 国家名称变更标准：该标准定义了国家和地区名称变
 
 #### 货币标准
 
-ISO 4217 - 这是一份国际标准，定义了三个字母的货币代码，例如 USD 表示美元。此标准还定义了每个货币的小数点位置和格式等信息。ISO 4217的官方链接为：https://www.iso.org/iso-4217-currency-codes.html。维基百科的链接：https://zh.wikipedia.org/zh-hans/ISO_4217
+ISO 4217 - 这是一份国际标准，定义了三个字母的货币代码，例如 USD 表示美元。此标准还定义了每个货币的小数点位置和格式等信息。ISO 4217的官方链接为：https://www.iso.org/iso-4217-currency-codes.html 维基百科的链接：https://zh.wikipedia.org/zh-hans/ISO_4217
 
 ISO 10916 - 这是一份国际标准，规定了货币金额表示法的基本原则，包括货币符号、金额表示方式、货币小数点分隔符等。ISO 10916的官方链接为：https://www.iso.org/standard/57248.html
 
@@ -154,7 +154,7 @@ jpmorganchase/number: 一个 Java 库，可以格式化货币金额、执行货�
 #### 时间标准
 - [ISO 8601](https://zh.wikipedia.org/zh-hans/ISO_8601) 国际标准化组织的日期和时间的表示方法
 
-ISO 8601：该标准规定了日期和时间的表示方法，包括年、月、日、小时、分钟和秒等信息，也可以表示带时区偏移量的日期和时间。该标准适用于各种应用场景，如数据交换、文件存储、电子邮件等等。ISO 8601标准的具体内容可以在以下链接中查看：https://www.iso.org/iso-8601-date-and-time-format.html。维基百科链接：(https://zh.wikipedia.org/zh-hans/ISO_8601)
+ISO 8601：该标准规定了日期和时间的表示方法，包括年、月、日、小时、分钟和秒等信息，也可以表示带时区偏移量的日期和时间。该标准适用于各种应用场景，如数据交换、文件存储、电子邮件等等。ISO 8601标准的具体内容可以在以下链接中查看：https://www.iso.org/iso-8601-date-and-time-format.html 维基百科链接：(https://zh.wikipedia.org/zh-hans/ISO_8601)
 
 POSIX时间：该标准定义了一个以1970年1月1日00:00:00 UTC为起点的时间系统，以秒为单位表示时间。POSIX时间主要用于Unix系统中，也是许多编程语言中表示时间的标准。该标准的具体内容可以在以下链接中查看：https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_15
 
