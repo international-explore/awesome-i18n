@@ -222,9 +222,11 @@ Every Time Zone: 这个网站提供了一个简单易用的界面，可以轻松
 #### 拼多多
 - Temu：海外版拼多多
 #### 阿里
-- 速卖通：To C的跨境零售电商平台
+- 速卖通：B2C 跨境零售电商平台
 - 阿里国际站：和To B的数字化跨境贸易平台
-
+- 收购了本土电商平台 Trendyol
+- 东南亚电商平台 Lazada
+- 阿里在西班牙的新电商平台 Miravia 
 #### 快手
 - Kwai：快手短视频国际版
   
@@ -232,9 +234,6 @@ Every Time Zone: 这个网站提供了一个简单易用的界面，可以轻松
 - 希音SHEIN是一家全球领先的时尚和生活方式在线零售商。服务全球超过150个国家的消费者。
 
 ### 新闻和文章
-#### 2023年1月
-- [出海，互联网大厂必修课](https://letschuhai.com/ecommerce-overseas-tiktok-temu-shein?utm_source=wechat&utm_medium=banner&utm_campaign=event&utm_id=weekly31)
-- [京东国际收缩，海外业务退守供应链服务](https://mp.weixin.qq.com/s/_WyrMr25orea8AjDzVSmRw)
 
 
 ## 出海白皮书
