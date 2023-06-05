@@ -1,4 +1,53 @@
-[TOC]
+- [1. **项目简介**](#1-项目简介)
+- [2. **基础概念**](#2-基础概念)
+  - [2.1国际化和本地化的概念解释](#21国际化和本地化的概念解释)
+  - [2.2 国际化和本地化的范围](#22-国际化和本地化的范围)
+  - [2.3 locale(语言标记和区域标识)的解释](#23-locale语言标记和区域标识的解释)
+      - [维基百科的解释](#维基百科的解释)
+      - [ICU中locale的解释](#icu中locale的解释)
+      - [locale的组成](#locale的组成)
+  - [2.4 时间相关概念](#24-时间相关概念)
+  - [2.5 字符编码和字符集的基础知识](#25-字符编码和字符集的基础知识)
+- [3. **相关标准**](#3-相关标准)
+  - [Unicode和UTF-8编码](#unicode和utf-8编码)
+  - [CLDR（Common Locale Data Repository）](#cldrcommon-locale-data-repository)
+  - [时区标准](#时区标准)
+  - [BCP 47标准介绍（语言标记和区域标识）](#bcp-47标准介绍语言标记和区域标识)
+  - [ISO标准](#iso标准)
+    - [国家代码标准](#国家代码标准)
+      - [ISO 3166](#iso-3166)
+    - [货币代码标准](#货币代码标准)
+      - [ISO 4217 三个字母货币代码](#iso-4217-三个字母货币代码)
+      - [ISO 10916 货币金额表示法](#iso-10916-货币金额表示法)
+    - [时间相关标准](#时间相关标准)
+      - [ISO 8601 日期和时间的表示方法](#iso-8601-日期和时间的表示方法)
+- [4. **最佳实践**](#4-最佳实践)
+  - [4.1 多语言文案](#41-多语言文案)
+  - [4.2 货币](#42-货币)
+  - [4.3 时间](#43-时间)
+- [5. **工具集合**](#5-工具集合)
+  - [5.1 时间](#51-时间)
+    - [5.1.1 时区工具](#511-时区工具)
+    - [5.1.2 时间格式化](#512-时间格式化)
+    - [5.1.3 日历](#513-日历)
+  - [5.2 货币](#52-货币)
+      - [5.2.1 汇率](#521-汇率)
+- [6. **知名开源项目**](#6-知名开源项目)
+  - [6.1 I18N通用项目](#61-i18n通用项目)
+    - [ICU](#icu)
+    - [icu4x](#icu4x)
+  - [6.2 翻译](#62-翻译)
+  - [6.3 时间](#63-时间)
+  - [6.4 数字+货币](#64-数字货币)
+- [7. i18n典型代码和实现原理](#7-i18n典型代码和实现原理)
+  - [java](#java)
+  - [go](#go)
+- [8. 大厂i18n实现方式案例](#8-大厂i18n实现方式案例)
+- [9. **贡献指南**](#9-贡献指南)
+- [10. **其他资源**](#10-其他资源)
+  - [10.1 书籍、论文、博客和教程](#101-书籍论文博客和教程)
+  - [10.2 网站外链](#102-网站外链)
+
 
 # 1. **项目简介**
 
@@ -40,7 +89,7 @@ awesome-i18n，旨在收集和分享出海i18n相关的一些领域知识和技�
 - 名字和称谓
 - 法律法规等
 
-## locale(语言标记和区域标识)的解释
+## 2.3 locale(语言标记和区域标识)的解释
 
 #### 维基百科的解释
 计算机中一套定义用户的语言、国家和用于定义用户希望在其用户界面上看到的各种可以改变的选择的参数集合。通常一个区域设置标识符至少包括一个语言标识符和一个区域标识符。
@@ -61,17 +110,15 @@ es-MX 西语+墨西哥
 ```
 
 
-## 时间相关概念
+## 2.4 时间相关概念
 
-## 字符编码和字符集的基础知识
+## 2.5 字符编码和字符集的基础知识
 
 unicode
 
 # 3. **相关标准**
 
-## BCP 47标准介绍（语言标记和区域标识）
-
-## Unicode和UTF-8编码的重要性
+## Unicode和UTF-8编码
 
 ## CLDR（Common Locale Data Repository）
 
@@ -81,6 +128,7 @@ unicode
 
 数据标准和文件解读：<https://mp.weixin.qq.com/s/joZdNPbGPJMPs67yzyrlvg>
 
+## BCP 47标准介绍（语言标记和区域标识）
 ## ISO标准
 
 ### 国家代码标准
@@ -123,14 +171,14 @@ ISO 8601标准官网链接：https://www.iso.org/iso-8601-date-and-time-format.h
 
 # 4. **最佳实践**
 
-## 多语言文案
+## 4.1 多语言文案
 
-## 货币
+## 4.2 货币
 "Internationalizing Currency Display" (Unicode Consortium)：介绍了国际化中货币显示的标准和最佳实践。
 链接：https://unicode.org/reports/tr35/tr35-numbers.html#Currency_Display
 
 
-## 时间
+## 4.3 时间
 
 
 # 5. **工具集合**
@@ -151,7 +199,7 @@ ISO 8601标准官网链接：https://www.iso.org/iso-8601-date-and-time-format.h
 
 ## 5.2 货币
 
-#### 汇率
+#### 5.2.1 汇率
 
 相关api站点工具
 
@@ -184,10 +232,10 @@ ISO 8601标准官网链接：https://www.iso.org/iso-8601-date-and-time-format.h
 
 *   [icu4x](https://github.com/unicode-org/icu4x) - CU4X提供了支持广泛软件国际化的组件。它深刻借鉴了ICU4C、ICU4J和ECMA-402的经验，并依赖于CLDR项目的数据。
 
-## 翻译
+## 6.2 翻译
 - gettext: https://www.gnu.org/software/gettext/, 是GNU国际化与本地化（i18n）函数库，获取多语言文案
 
-## 时间
+## 6.3 时间
 Moment.js - 一个JavaScript库，用于解析、验证、操作和显示日期和时间，支持本地化和国际化。Github链接：https://github.com/moment/moment
 
 date-fns - 另一个用于处理日期和时间的JavaScript库，它强调了函数式编程和不可变性，也支持本地化和国际化。Github链接：https://github.com/date-fns/date-fns
@@ -196,7 +244,7 @@ Chrono - 一个用于解析和格式化自然语言日期和时间的JavaScript�
 
 pytz - Python的时区处理库，可以轻松地处理不同时区的时间转换。Github链接：https://github.com/stub42/pytz
 
-## 数字+货币
+## 6.4 数字+货币
 
 *   accounting.js: 一个用于格式化和处理货币、数字和货币的 JavaScript 库，支持多种货币格式和货币计算。它可以在浏览器端和 Node.js 中使用。Github链接：<https://github.com/josscrowcroft/accounting.js/>
 *   big.js: 一个用于处理大数字和货币计算的 JavaScript 库。它支持多种货币，可以在浏览器端和 Node.js 中使用。Github链接：<https://github.com/MikeMcl/big.js/>
@@ -205,7 +253,7 @@ pytz - Python的时区处理库，可以轻松地处理不同时区的时间转�
 *   Numeral.js: 一个用于格式化和处理数字的 JavaScript 库，支持各种数字格式、货币和货币计算。它可以在浏览器端和 Node.js 中使用。Github链接：<https://github.com/adamwdraper/Numeral-js>
 *   jpmorganchase/number: 一个 Java 库，可以格式化货币金额、执行货币计算，支持多种货币和货币格式。Github链接：<https://github.com/jpmorganchase/number>
 
-# 7. **i18n典型代码和实现原理**
+# 7. i18n典型代码和实现原理
 
 ## java
 
@@ -214,7 +262,7 @@ pytz - Python的时区处理库，可以轻松地处理不同时区的时间转�
 *   逐个列举主流编程语言，介绍它们的i18n实现原理和特点
 *   比较不同语言的i18n实践差异和注意事项
 
-# 8. **大厂i18n实现方式案例**
+# 8. 大厂i18n实现方式案例
 
 *   收集和介绍一些知名互联网公司（如Google、Facebook、Netflix等）的i18n实现方式和经验分享
 *   分享大厂在多语言应用和本地化方面的最佳实践
@@ -227,12 +275,12 @@ pytz - Python的时区处理库，可以轻松地处理不同时区的时间转�
 
 # 10. **其他资源**
 
-## 书籍、论文、博客和教程
+## 10.1 书籍、论文、博客和教程
 * 视频课程：
      * 谷歌同学的一个教程： https://www.udacity.com/course/localization-essentials--ud610 
 * [l10n成熟度标准](https://blog.andovar.com/localization-maturity-model-how-does-your-company-measure-up)
 
-## 网站外链
+## 10.2 网站外链
 
  * [W3C international](https://www.w3.org/blog/international/) - W3C international网站，涵盖w3c在international方向的标准、手册、工具等。
  * [ICU 官网](https://icu.unicode.org/) - 为应用提供Unicode和全球化支持的一套成熟、广泛使用的组件库
