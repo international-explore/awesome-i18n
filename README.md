@@ -16,6 +16,8 @@
       - [locale的组成](#locale的组成)
   - [2.4 时间相关概念](#24-时间相关概念)
   - [2.5 字符编码和字符集的基础知识](#25-字符编码和字符集的基础知识)
+      - [Unicode](#unicode)
+      - [UTF-8编码](#utf-8编码)
 - [3. **相关标准**](#3-相关标准)
   - [Unicode和UTF-8编码](#unicode和utf-8编码)
   - [CLDR（Common Locale Data Repository）](#cldrcommon-locale-data-repository)
@@ -148,14 +150,39 @@ es-MX 西语+墨西哥
 ## 2.4 时间相关概念
 
 ## 2.5 字符编码和字符集的基础知识
+#### Unicode
+Unicode 是一种**字符编码标准**，它为世界上几乎所有的字符和文本元素提供了唯一的标识符，包括字母、数字、符号、标点符号、特殊符号和各种文字。Unicode 旨在解决不同字符集和编码的混乱，为全球范围内的文字和符号提供一致的表示和交换方式。
 
-unicode
+Unicode 使用数字来表示每个字符，这些数字称为码点（Code Point）。每个字符都有一个唯一的码点，例如，拉丁字母 "A" 的码点为 U+0041，中文汉字 "你" 的码点为 U+4F60。Unicode 支持超过一百万个码点，以涵盖各种语言、符号和文字系统。
+
+Unicode 还定义了字符编码方案，最常用的是 UTF-8、UTF-16 和 UTF-32。这些编码方案将码点转换为字节序列，以便在计算机系统中存储和传输文本数据。
+
+通过使用 Unicode，人们能够更容易地在不同的语言和文化之间进行文本交流，确保字符的正确显示和处理，以实现全球化和国际化的支持。
+
+#### UTF-8编码
+UTF-8（Unicode Transformation Format - 8-bit）是一种变长字符编码方案，用于将 Unicode 中的字符编码转换为字节序列以进行存储和传输。
+
+UTF-8 的设计灵感来自 ASCII 编码，它采用了与 ASCII 兼容的编码方式，使得 ASCII 字符在 UTF-8 中的表示与 ASCII 编码相同。对于非 ASCII 字符（即 Unicode 码点大于 127 的字符），UTF-8 使用多字节序列进行编码，字节数的长度取决于字符的 Unicode 码点。
+
+UTF-8 的编码规则如下：
+
+对于单字节字符（Unicode 码点范围：U+0000 至 U+007F），使用一个字节表示，最高位固定为 0。
+对于多字节字符，首字节的高位表示字节数，后续字节的高位都以 10 开头，用于标识该字节属于多字节字符的一部分。
+UTF-8 的优势在于它兼容 ASCII 编码，并且能够表示几乎所有的 Unicode 字符，包括国际文字、符号和表情符号等。它在互联网、操作系统和各种应用程序中得到广泛支持，成为一种常用的字符编码方案。
 
 # 3. **相关标准**
 
 ## Unicode和UTF-8编码
+- Unicode官网：https://home.unicode.org/
+- UTF-8：https://zh.wikipedia.org/zh-hans/UTF-8
+
 
 ## CLDR（Common Locale Data Repository）
+
+官网：https://cldr.unicode.org/
+
+json版本的CLDR数据：
+https://github.com/unicode-org/cldr-json
 
 ## 时区标准
 
