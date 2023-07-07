@@ -17,9 +17,12 @@
 主要变更：回滚到2023a版本
 
 原文：
-> Changes to past and future timestamps
-> Model Lebanon's DST chaos by reverting data to tzdb 2023a.
-> (Thanks to Rany Hany for the heads-up.)
+```
+Changes to past and future timestamps
+Model Lebanon's DST chaos by reverting data to tzdb 2023a.
+(Thanks to Rany Hany for the heads-up.)
+```
+
 
 #### 2023b
 时间：2023-03-23 19:50:38 -0700
@@ -27,9 +30,11 @@
 主要变更：今年黎巴嫩的夏令时调时将在4月20日/21日进行，而不是3月25日/26日。
 
 原文：
-> Changes to future timestamps
-> This year Lebanon springs forward April 20/21 not March 25/26.
-> (Thanks to Saadallah Itani.)  [This was reverted in 2023c.]
+```
+Changes to future timestamps
+This year Lebanon springs forward April 20/21 not March 25/26.
+(Thanks to Saadallah Itani.)  [This was reverted in 2023c.]
+```
 
 #### 2023a
 时间：2023-03-22 12:39:33 -0700
@@ -45,7 +50,8 @@
 - 修复了对C23属性的使用问题。
 
 原文：
-> Egypt now uses DST again, from April through October.
+```
+    Egypt now uses DST again, from April through October.
     This year Morocco springs forward April 23, not April 30.
     Palestine delays the start of DST this year.
     Much of Greenland still uses DST from 2024 on.
@@ -53,6 +59,8 @@
     tzselect can now use current time to help infer timezone.
     The code now defaults to C99 or later.
     Fix use of C23 attributes.
+```
+
 
 #### 2022g
 时间：2022-11-29 08:58:31 -0800
@@ -102,7 +110,8 @@ When summer arrives, they will move their clocks forward one hour to GMT-5, the 
 - 斐济将不再观察夏令时。
 
 原文：
-> Mexico will no longer observe DST except near the US border.
+```
+    Mexico will no longer observe DST except near the US border.
     Chihuahua moves to year-round -06 on 2022-10-30.
     Fiji no longer observes DST.
     Move links to 'backward'.
@@ -114,6 +123,8 @@ When summer arrives, they will move their clocks forward one hour to GMT-5, the 
     Omit large-file support when no longer needed.
     In C code, use some C23 features if available.
     Remove no-longer-needed workaround for Qt bug 53071.
+```
+    
 
 #### 2022b
 时间： 2022-08-10 15:38:32 -0700
@@ -129,7 +140,8 @@ When summer arrives, they will move their clocks forward one hour to GMT-5, the 
 - 新增了tailored_tarballs目标，取代了rearguard_tarballs目标。
 
 原文：
-> Chile's DST is delayed by a week in September 2022.
+```
+    Chile's DST is delayed by a week in September 2022.
     Iran no longer observes DST after 2022.
     Rename Europe/Kiev to Europe/Kyiv.
     New zic -R option
@@ -137,4 +149,4 @@ When summer arrives, they will move their clocks forward one hour to GMT-5, the 
     Finish moving duplicate-since-1970 zones to 'backzone'.
     New build option PACKRATLIST
     New tailored_tarballs target, replacing rearguard_tarballs
-
+```
