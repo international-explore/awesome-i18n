@@ -196,6 +196,7 @@ json版本的CLDR数据：https://github.com/unicode-org/cldr-json
 
 数据标准和文件解读：<https://mp.weixin.qq.com/s/joZdNPbGPJMPs67yzyrlvg>
 
+[时区变更历史新闻](news/timezone_news.md)
 ## BCP 47标准介绍（语言标记和区域标识）
 ## ISO标准
 
