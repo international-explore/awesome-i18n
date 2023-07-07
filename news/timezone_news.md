@@ -4,7 +4,12 @@
     - [2023a](#2023a)
     - [2022g](#2022g)
     - [2022f](#2022f)
+    - [2022e](#2022e)
+    - [2022d](#2022d)
+    - [2022c](#2022c)
     - [2022b](#2022b)
+    - [2022a](#2022a)
+    - [2021e](#2021e)
 
 ## 时区变更新闻
 原文地址：https://github.com/eggert/tz/blob/main/NEWS
@@ -106,7 +111,7 @@ When summer arrives, they will move their clocks forward one hour to GMT-5, the 
 时间：2022-10-28 18:04:57 -0700
 
 主要变更：
-- **墨西哥除了靠近美国边境的地区外，将不再观察夏令时。**奇瓦瓦州将于2022年10月30日转为全年使用-06时区。
+- **墨西哥除了靠近美国边境的地区外，将不再观察夏令时。** 奇瓦瓦州将于2022年10月30日转为全年使用-06时区。
 - 斐济将不再观察夏令时。
 
 原文：
@@ -124,7 +129,44 @@ When summer arrives, they will move their clocks forward one hour to GMT-5, the 
     In C code, use some C23 features if available.
     Remove no-longer-needed workaround for Qt bug 53071.
 ```
-    
+
+ #### 2022e
+时间：2022-10-11 11:13:02 -0700
+
+主要变更：
+- 约旦和叙利亚将从使用夏令时的+02/+03时区切换为全年使用+03时区。
+
+原文：
+```
+Jordan and Syria switch from +02/+03 with DST to year-round +03.
+```
+
+#### 2022d
+时间： 2022-09-23 12:02:57 -0700
+
+主要变更：
+- 巴勒斯坦2022年的夏令时结束将在10月29日的02:00进行，而不是10月28日的01:00
+- 将乌克兰的三个时区简化为一个时区。
+
+原文：
+```
+Palestine transitions are now Saturdays at 02:00.
+Simplify three Ukraine zones into one.
+```
+
+#### 2022c
+时间：2022-08-15 17:47:18 -0700
+
+主要变更：
+- 解决FreeBSD、macOS等系统中awk的bug。
+- 改进跨洲际时区的tzselect工具。
+
+原文：
+```
+Work around awk bug in FreeBSD, macOS, etc.
+Improve tzselect on intercontinental Zones.
+```
+
 
 #### 2022b
 时间： 2022-08-10 15:38:32 -0700
@@ -149,4 +191,31 @@ When summer arrives, they will move their clocks forward one hour to GMT-5, the 
     Finish moving duplicate-since-1970 zones to 'backzone'.
     New build option PACKRATLIST
     New tailored_tarballs target, replacing rearguard_tarballs
+```
+
+
+#### 2022a
+时间：2022-03-15 23:02:01 -0700
+
+主要变更：
+- 巴勒斯坦将于2022年03月27日开始夏令时，而不是03月26日。
+- zdump -v现在能够更好地指示失败情况。
+- 修复了读取损坏的TZif数据的代码中的错误。
+
+原文：
+```
+Palestine will spring forward on 2022-03-27, not -03-26.
+zdump -v now outputs better failure indications.
+Bug fixes for code that reads corrupted TZif data.
+```
+
+#### 2021e
+时间： 2021-10-21 18:41:00 -0700
+
+主要变更：
+- 巴勒斯坦将于10月29日（而不是10月30日）的01:00结束夏令时。
+
+原文：
+```
+Palestine will fall back 10-29 (not 10-30) at 01:00.
 ```
