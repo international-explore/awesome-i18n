@@ -18,6 +18,7 @@
   - [2.5 字符编码和字符集的基础知识](#25-字符编码和字符集的基础知识)
       - [Unicode](#unicode)
       - [UTF-8编码](#utf-8编码)
+  - [2.6 电话相关基础知识](#26-电话相关基础知识)
 - [3. **相关标准**](#3-相关标准)
   - [Unicode和UTF-8编码](#unicode和utf-8编码)
   - [CLDR（Common Locale Data Repository）](#cldrcommon-locale-data-repository)
@@ -49,6 +50,7 @@
   - [6.2 翻译](#62-翻译)
   - [6.3 时间](#63-时间)
   - [6.4 数字+货币](#64-数字货币)
+  - [6.5 电话](#65-电话)
 - [7. i18n典型代码和实现原理](#7-i18n典型代码和实现原理)
   - [java](#java)
   - [go](#go)
@@ -170,6 +172,18 @@ UTF-8 的编码规则如下：
 对于多字节字符，首字节的高位表示字节数，后续字节的高位都以 10 开头，用于标识该字节属于多字节字符的一部分。
 UTF-8 的优势在于它兼容 ASCII 编码，并且能够表示几乎所有的 Unicode 字符，包括国际文字、符号和表情符号等。它在互联网、操作系统和各种应用程序中得到广泛支持，成为一种常用的字符编码方案。
 
+## 2.6 电话相关基础知识
+国际电话号码 一般由  **国际冠码 + 国际电话区号 + 电话号码** 组成。
+比如 00 86 2150504740、+86 13112345678。
+- **国际冠码** ：拨出电话时候，由**拨出地区**确定的一个前缀，不同国家使用不同的标准，比如中国大陆使用 “00” 为国际冠码，拨打国际电话的时候要根据拨出地区确定国际冠码，同时，由于这个冠码太繁琐，可以使用“+”来代替任何国家的国家冠码。
+- **国际电话区号**： 表示你要 **拨到哪里** ，每个国家分配的一个代码，我们熟悉的 ”86“ 是中国大陆， ”852“是中国香港，”1“ 是美国。“+86”就是由国际冠码与国际电话区号组成的。
+- **电话号码**：有了上述两个部分，电话号码就确定了国家（地区），剩下的部分就是内部的电话号码了，每个不同国家、不同地区，都有可能有自己内部的电话号码格式，不过这个部分就是日常生活中最常用的部分，大家会熟悉很多。
+  
+举例： 假设我香港的朋友，告诉我他的电话号码是 51231234，我要给他打电话： 
+1. 我需要确定我是从中国大陆拨打电话，中国大陆的国际冠码是 00，或者我不知道我的国际冠码，直接用通用的冠码 +；
+2. 我需要确定香港地区的电话区号，是 852； 
+3. 在朋友给我的号码前面加上上述号码，拨打 0085251231234 或者 +85251231234 才能正确拨打。
+
 # 3. **相关标准**
 
 ## Unicode和UTF-8编码
@@ -237,6 +251,7 @@ ISO 20022 - 这是一份国际标准，为金融机构提供了一种统一的�
 ISO 8601：该标准规定了日期和时间的表示方法，包括年、月、日、小时、分钟和秒等信息，也可以表示带时区偏移量的日期和时间。该标准适用于各种应用场景，如数据交换、文件存储、电子邮件等等。
 ISO 8601标准官网链接：https://www.iso.org/iso-8601-date-and-time-format.html
 维基百科链接：(https://zh.wikipedia.org/zh-hans/ISO_8601)
+
 
 # 4. **最佳实践**
 
@@ -329,6 +344,19 @@ pytz - Python的时区处理库，可以轻松地处理不同时区的时间转�
 *   Numeral.js: 一个用于格式化和处理数字的 JavaScript 库，支持各种数字格式、货币和货币计算。它可以在浏览器端和 Node.js 中使用。Github链接：<https://github.com/adamwdraper/Numeral-js>
 *   jpmorganchase/number: 一个 Java 库，可以格式化货币金额、执行货币计算，支持多种货币和货币格式。Github链接：<https://github.com/jpmorganchase/number>
 
+## 6.5 电话
+- Java/C++/JavaScript: https://github.com/google/libphonenumber
+- C#: https://github.com/twcclegg/libphonenumber-csharp
+- Go: https://github.com/nyaruka/phonenumbers
+- Objective-c: https://github.com/iziz/libPhoneNumber-iOS
+- PHP: https://github.com/giggsey/libphonenumber-for-php
+- PostgreSQL in-database types: https://github.com/blm768/pg-libphonenumber
+- Python: https://github.com/daviddrysdale/python-phonenumbers
+- Ruby: https://github.com/mobi/telephone_number
+- Rust: https://github.com/1aim/rust-phonenumber
+- Erlang: https://github.com/marinakr/libphonenumber_erlang
+- Clojure: https://github.com/randomseed-io/phone-number
+   
 # 7. i18n典型代码和实现原理
 
 ## java
