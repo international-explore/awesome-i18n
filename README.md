@@ -184,6 +184,8 @@ UTF-8 的优势在于它兼容 ASCII 编码，并且能够表示几乎所有的 
 2. 我需要确定香港地区的电话区号，是 852； 
 3. 在朋友给我的号码前面加上上述号码，拨打 0085251231234 或者 +85251231234 才能正确拨打。
 
+各个国家的电话区号：https://zh.wikipedia.org/zh-hans/%E5%9B%BD%E9%99%85%E7%94%B5%E8%AF%9D%E5%8C%BA%E5%8F%B7%E5%88%97%E8%A1%A8
+
 # 3. **相关标准**
 
 ## Unicode和UTF-8编码
@@ -200,6 +202,9 @@ CLDR 提供了丰富的**数据**，包括各个国家和地区的**语言、时
 通过使用 CLDR，开发人员可以实现更准确和一致的本地化体验，确保软件在不同语言和文化环境中正确地显示和处理文本、日期、时间、数字和其他本地化元素。CLDR 数据可以在各种软件平台和应用程序中使用，如操作系统、数据库、网站、移动应用等。
 
 官网：https://cldr.unicode.org/
+
+cldr的github（xml数据格式）：https://github.com/unicode-org/cldr
+其中重要数据都放在https://github.com/unicode-org/cldr/tree/main/common/main中，优先可以看root.xml文件
 
 json版本的CLDR数据：https://github.com/unicode-org/cldr-json
 
