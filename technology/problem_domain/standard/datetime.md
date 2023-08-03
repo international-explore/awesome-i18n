@@ -1,6 +1,6 @@
 # 时间日期
 
-## 时间日期相关的配置
+## 1、时间日期相关的配置
 
 #### [时间日期字段](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-dates-modern/main/zh/dateFields.json)
 
@@ -8,7 +8,39 @@
 
 #### [公历的时间日期展示](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-dates-modern/main/zh/ca-gregorian.json)
 
-**ICU4J日历类解读**
+#### [时区信息](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-dates-modern/main/zh/timeZoneNames.json)
+
+```json
+{
+    "main":{
+        "zh":{
+            "identity":{
+                "version":{
+                    "_cldrVersion":"41"
+                },
+                "language":"zh"
+            },
+            "dates":{
+                "timeZoneNames":{
+                    "hourFormat":"+HH:mm;-HH:mm",
+                    "gmtFormat":"GMT{0}",
+                    "gmtZeroFormat":"GMT",
+                    "regionFormat":"{0}时间",
+                    "regionFormat-type-daylight":"{0}夏令时间",
+                    "regionFormat-type-standard":"{0}标准时间",
+                    "fallbackFormat":"{1}（{0}）",
+                    "zone":Object{...},
+                    "metazone":Object{...}
+                }
+            }
+        }
+    }
+}
+```
+
+## 2、相关代码解读
+
+### 2.1 **ICU4J日历类解读**
 com.ibm.icu.util.Calendar
 
 ```
@@ -127,40 +159,38 @@ Roll规则：Larger fields are unchanged after the call. A larger field represen
 ```
 
 
+### 2.2 时间类解读
+
+DateFormat的parse方法的底层原理涉及以下步骤：
+```
+获取输入的日期字符串和DateFormat对象中定义的日期格式模式。
+1、将日期字符串按照日期格式模式进行解析，将字符串中的各个字段（年、月、日、时、分、秒等）提取出来。
+2、根据提取出来的字段值，构建一个Calendar对象，并将字段值设置到对应的Calendar字段中。
+3、如果DateFormat对象定义了时区信息，将时区信息应用到Calendar对象中，以便正确地解析和处理时区相关的时间信息。
+4、最后，根据Calendar对象中的字段值，计算出对应的时间戳（以毫秒为单位）。
+```
+
+
+计算时区偏移和夏令时偏移的过程中存在两个潜在的歧义。
+```
+以下讨论假设夏令时切换时间为凌晨2点（壁钟时间）。
+
+1、正偏移变化，例如切换到夏令时。 在这种情况下，凌晨2点到2点59分之间的时间实际上不存在。对于这种情况，skippedWallTime选项指定了行为。例如，凌晨2点30分被解释为：
+- WALLTIME_LAST（默认）：凌晨3点30分（夏令时）（将凌晨2点30分解释为离凌晨1点59分（标准时间）后31分钟）
+- WALLTIME_FIRST：凌晨1点30分（标准时间）（将凌晨2点30分解释为离凌晨3点（夏令时）前30分钟）
+- WALLTIME_NEXT_VALID：凌晨3点（夏令时）（壁钟上2点30分后的下一个有效时间）
+
+2、负偏移变化，例如切换回标准时间。 在这种情况下，凌晨1点到1点59分之间的时间可以是标准时间或夏令时。两者都是有效的表示（表示从凌晨1点59分（夏令时）跳到凌晨1点（标准时间））。 对于这种情况，repeatedWallTime选项指定了行为。例如，凌晨1点30分被解释为：
+- WALLTIME_LAST（默认）：凌晨1点30分（标准时间）- 后一次出现
+- WALLTIME_FIRST：凌晨1点30分（夏令时）- 前一次出现
+除了上述情况之外，当日历为严格模式时（非默认），落在被跳过的时间范围内的壁钟时间将被视为错误的情况。
+
+```
 
 - 日期格式化
 - 时间格式化
 - 时间间隔格式化
 
-#### [时区信息](https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-dates-modern/main/zh/timeZoneNames.json)
-
-```json
-{
-    "main":{
-        "zh":{
-            "identity":{
-                "version":{
-                    "_cldrVersion":"41"
-                },
-                "language":"zh"
-            },
-            "dates":{
-                "timeZoneNames":{
-                    "hourFormat":"+HH:mm;-HH:mm",
-                    "gmtFormat":"GMT{0}",
-                    "gmtZeroFormat":"GMT",
-                    "regionFormat":"{0}时间",
-                    "regionFormat-type-daylight":"{0}夏令时间",
-                    "regionFormat-type-standard":"{0}标准时间",
-                    "fallbackFormat":"{1}（{0}）",
-                    "zone":Object{...},
-                    "metazone":Object{...}
-                }
-            }
-        }
-    }
-}
-```
-
+## 3、相关工具和网站
 时区相关的工具网站：
 https://nodatime.org/TimeZones
