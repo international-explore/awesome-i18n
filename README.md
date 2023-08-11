@@ -47,6 +47,7 @@
   - [6.1 I18N通用项目](#61-i18n通用项目)
     - [ICU](#icu)
     - [icu4x](#icu4x)
+    - [golang.org/x/text](#golangorgxtext)
   - [6.2 翻译](#62-翻译)
   - [6.3 时间](#63-时间)
   - [6.4 数字+货币](#64-数字货币)
@@ -327,6 +328,21 @@ API接口：
 ### icu4x
 
 *   [icu4x](https://github.com/unicode-org/icu4x) - CU4X提供了支持广泛软件国际化的组件。它深刻借鉴了ICU4C、ICU4J和ECMA-402的经验，并依赖于CLDR项目的数据。
+
+### golang.org/x/text
+github地址： https://github.com/golang/text/
+
+golang.org/x/text是Go语言的一个子项目，它提供了文本处理的相关功能。它包含了很多有用的子包，可以用于本地化、字符集转换、文本处理与格式化、数字格式化、货币处理等。
+
+下面是一些golang.org/x/text包中常用子包的介绍：
+- currency：提供了ISO 4217标准中定义的各种货币的常量和货币相关的函数。
+- language：定义了标准的ISO语言和区域代码，并提供了与语言相关的函数。
+- message：用于格式化多语言消息的包，支持参数化输出和本地化处理。
+- number：用于数字格式化和解析的包，提供了更高级和可定制的数字格式化功能。
+- plural：用于处理复数形式的包，可以根据不同的语言和规则返回正确的复数形式。
+- runes：提供了一些有用的函数和工具，用于对Unicode字符进行操作和处理。
+- transform：提供了字符集转换和编码转换的功能，可以轻松处理不同编码之间的转换。
+- unicode：提供了Unicode字符的相关信息和函数，可以用于字符类别、大小写转换、宽字符处理等。
 
 ## 6.2 翻译
 - gettext: https://www.gnu.org/software/gettext/, 是GNU国际化与本地化（i18n）函数库，获取多语言文案
