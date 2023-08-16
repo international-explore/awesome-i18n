@@ -48,6 +48,7 @@
     - [ICU](#icu)
     - [icu4x](#icu4x)
     - [golang.org/x/text](#golangorgxtext)
+    - [go-playground/locales](#go-playgroundlocales)
   - [6.2 翻译](#62-翻译)
   - [6.3 时间](#63-时间)
   - [6.4 数字+货币](#64-数字货币)
@@ -343,6 +344,18 @@ golang.org/x/text是Go语言的一个子项目，它提供了文本处理的相�
 - runes：提供了一些有用的函数和工具，用于对Unicode字符进行操作和处理。
 - transform：提供了字符集转换和编码转换的功能，可以轻松处理不同编码之间的转换。
 - unicode：提供了Unicode字符的相关信息和函数，可以用于字符类别、大小写转换、宽字符处理等。
+- date：**对日期时间暂时没有支持**
+
+核心逻辑是下载cldr的数据，然后解析生成对应的二进制数据，放到代码中。
+
+### go-playground/locales
+github地址：https://github.com/go-playground/locales
+
+用于提供本地化（locales）支持。它提供了一组用于处理不同语言和地区的数据，例如日期，时间，数字格式化和翻译等。
+
+
+核心逻辑见：https://github.com/go-playground/locales/blob/master/cmd/generate_resources.go
+依赖golang.org/x/text生成原始数据，然后根据数据自动生成对应的配置和代码。
 
 ## 6.2 翻译
 - gettext: https://www.gnu.org/software/gettext/, 是GNU国际化与本地化（i18n）函数库，获取多语言文案
