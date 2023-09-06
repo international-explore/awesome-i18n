@@ -467,6 +467,8 @@ pytz - Python的时区处理库，可以轻松地处理不同时区的时间转�
 - strconv 包：用于数字和字符串之间的转换，例如数字格式化和解析。
 - text/template 和 html/template 包：用于模板引擎，支持本地化的文本替换和格式化。
 
+[time解析](./technology/go_time.md)
+
 # 8. 大厂i18n实现方式案例
 
 *   收集和介绍一些知名互联网公司（如Google、Facebook、Netflix等）的i18n实现方式和经验分享
