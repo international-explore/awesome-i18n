@@ -34,6 +34,7 @@
 
 
 脑图：https://mm.tt/app/map/2960894425?t=2fn031Wv0C
+![image](https://github.com/international-explore/awesome-i18n/assets/104364356/c04bf1cc-88b3-46d1-969e-88951ddd4281)
 
 
 ## 一、JDK8之前，旧的日期时间API
