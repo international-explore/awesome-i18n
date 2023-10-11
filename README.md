@@ -456,6 +456,10 @@ pytz - Python的时区处理库，可以轻松地处理不同时区的时间转�
 - Erlang: https://github.com/marinakr/libphonenumber_erlang
 - Clojure: https://github.com/randomseed-io/phone-number
    
+每个国家的号码规则可以在https://github.com/google/libphonenumber/blob/master/resources/metadata查看。
+
+以CO为例，先找到CO对应的区号57，然后可以去[ranges.csv](https://github.com/google/libphonenumber/blob/master/resources/metadata/57/ranges.csv)查看规则，可以在[examples.csv](https://github.com/google/libphonenumber/blob/master/resources/metadata/57/examples.csv)查看示例
+
 # 7. i18n典型代码和实现原理
 
 ## java
