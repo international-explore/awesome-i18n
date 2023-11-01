@@ -141,6 +141,9 @@ add规则2:由于字段f改变后，较小的字段其最小值或最大值可�
 按照add规则1：将MONTH字段设置为9月，因为将8月加13个月，即为下一年的9月。由于在公历中DAY_OF_MONTH在9月份不能为31，
 因此根据add规则2：将DAY_OF-MONTH设置为30，这是最接近的值。
 
+> go原生的addDate函数规则跟ICU不一致。它与规则2不一样，它会进行溢出。比如10月31号加一个月，先变成11.31（不存在），然后变成了12.1。
+> 参考：https://pkg.go.dev/time#Time.AddDate
+
 5.3、核心方法3：roll
 roll(f, delta) adds delta to field f without changing larger fields. 
 Roll规则：Larger fields are unchanged after the call. A larger field represents a larger unit of time. DAY_OF_MONTH is a larger field than HOUR.
